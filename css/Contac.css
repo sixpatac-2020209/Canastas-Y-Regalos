@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Brush Script MT";
+    src: url(../src/font/BRUSHSCI.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background: url(../images/backgroundContact.png);
+    background-size: 100vw 100vh;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+.logo{
+    font-family: "Brush Script MT";
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-weight: 150;
+    background: #204bd8;
+}
+.column{
+    width: 100%;
+}
+.main-header{
+    width: 100%;
+    background:#204bd8;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: none;
+}
+.icon-menu{
+    display: block;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.9em;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.menu{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0,0.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menu__link{
+    font-size: 1.2em;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu__link:hover{
+    border-radius: 15px;
+    background: #150170;
+    color: #fff;
+}
+.menu__link--select{
+    background: #001affa2;
+    color: #fff;
+}
+  
+.mostrar{
+    height: 106px;
+}
+.form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+.form-title span{
+    color: black;
+}
+
+.contenedor .form{
+    background: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+}
+
+.form-label{
+    display: block;
+    color: blue;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.form-input, .form-textarea{
+    background: rgba(171, 213, 252, 0.6);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-family: Roboto;
+}
+#texto{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;    
+}
+.form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.btn-submit{
+    align-content: center;
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: red;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 3px;
+}
+.btn-submit:hover{
+    background: rgb(71, 2, 2);
+}
+
+
+.main-footer{
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    padding-top: auto;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+  .main-footer [class*="icon-"]{
+    color: #fff;
+    text-decoration: none;
+}
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 7px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-nav{
+        background: rgba(0, 0, 0, 0.432);
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu{
+        background: rgba(0, 0, 0, 0);
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link{
+        padding: 15px;
+    }
+    .column--33{
+        width: 49%;
+    }
+    .main-header {
+        background: rgba(255, 0, 0, 0);
+    }
+    .logo{
+        background: rgba(255, 0, 0, 0);
+        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+    }
+    .main-footer{
+        background: rgba(0, 0, 0, 0.466);
+        color: #fff;
+    }
+}

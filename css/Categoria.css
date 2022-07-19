@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Brush Script MT";
+    src: url(../src/font/BRUSHSCI.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContenedorText p{
+    padding: 15px;
+}
+.contenedor figure{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+
+
+.logo{
+    font-family: "Brush Script MT";
+    font-size: 2.5em;
+    color: rgb(78, 11, 11);
+    background: #204bd800;
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.733);
+}
+.column{
+    width: 100%;
+}
+.column--50{
+    width: 49%;
+}
+.main-header{
+    width: auto;
+    background:#6699cc;
+}
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+}
+
+.icon-menu{
+    display: block;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.9em;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 43px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.menu{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menucolor{
+    background-color: #6699cc;
+}
+.menu__link{
+    border: 2px solid rgb(255, 255, 255);
+    display: block;
+    padding: 2px 15px;
+    color: rgb(78, 11, 11);
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    background: #0c0236;
+    color: rgb(255, 255, 255);
+}
+
+  
+.mostrar{
+    height: 65px;
+}
+.titulo-categoria h2{
+    font-family: "Brush Script MT";
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.capa{
+    margin: 0;
+    padding: 2px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+.main-footer{
+    background: url(../images/Nuevo.jpeg);
+    object-fit: cover;
+    color: #fff;
+    padding: 0px;
+    padding-top: auto;
+    font-size: 1em;
+}
+
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.main-footer [class*="icon-"]{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .titulo-categoria h2{
+        font-family: "Brush Script MT";
+        font-size: 2.9em;
+        text-align: center;
+    }
+    .ContenedorText p{
+        padding: 15px;
+        font-size: 1.1em;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+ 
+    .main-nav{
+        background: #6699cc;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu{
+        background: #6699cc;
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link{
+        padding: 5px 15px;
+    }
+    .column--33{
+        width: 49%;
+    }
+    .main-header {
+        background: #6699cc;
+    }
+    .main-nav{
+        border-bottom: 4px solid rgb(255, 255, 255);
+    }
+
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo-categoria h2{
+        font-family: "Brush Script MT";
+        font-size: 3.1em;
+        text-align: center;
+    }
+    .ContenedorText p{
+        padding: 15px;
+        font-size: 1.3em;
+    }
+
+    .main-footer{
+        background: url(/images/Nuevo.jpeg);
+        color: #fff;
+    }
+    .capa{
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.507);
+    }
+}
